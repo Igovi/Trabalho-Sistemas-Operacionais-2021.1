@@ -1,0 +1,25 @@
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .escalonador-info__content{
+    text-align: center;
+} 
+.escalonador-info__inputContainer{
+    margin-bottom: 15px;
+}
+
+.escalonador-info__input{
+    margin-left: 10px;
+}
+
+#file{
+    color: rgb(158, 158, 158);
+}
+
+.escalonador-info__button{
+    margin: 25px;
+    height: 35px;
+    width: 240px;
+}
