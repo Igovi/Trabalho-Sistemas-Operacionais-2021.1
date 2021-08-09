@@ -13,7 +13,7 @@
 
 <body>
     <main>
-        <div class="escalonador__container">
+        <div class=" row escalonador__container">
             <div class="escalonador-header__container">
                 <h1 class="escolonador-header__title">Trabalho Sistemas Operacionais</h1>
                 <p class="escolonador-header__subtitle">Trabalho desenvolvido pelo grupo: Yakson Menechini Chan, Igor Gomes Vieira, Victor Patricio Braga Filgueira.
@@ -37,9 +37,104 @@
 
             </div>
         </div>
+        <div class="row escalonador-main__container">
+            <h1 id="timer" class="escalonador-main__hours">Tempo: 0</h1>
+            <div class="col-6 escalonador-main-cpu__container">
+                <div class="escalonador-main-cpu__content">
+                    <div class="escalonador-main-cpu__item">
+                        <h1 class="escalonador-main-cpu__text">Cpu1</h1>
+                        <span>P1</span>
+                        <hr/>
+                    </div>
+                    <div class="escalonador-main-cpu__item">
+                        <h1 class="escalonador-main-cpu__text">Cpu 2</h1>
+                        <span>P2</span>
+                        <hr/>
+                    </div>
+                    <div class="escalonador-main-cpu__item">
+                        <h1 class="escalonador-main-cpu__text">Cpu 3 </h1>
+                        <span>P3</span>
+                        <hr/>
+                    </div>
+                    <div class="escalonador-main-cpu__item">
+                        <h1 class="escalonador-main-cpu__text">Cpu 4</h1>
+                        <span>P4</span>
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 escalonador-main-info__container">
+                <div class="escalonador-main-info__content">
+                    <div class="escalonador-main-info__item">
+                        <h3>Prioridades</h3>
+                        <ul id="priority">
+                            <li>Opa</li>
+                            <li>Opa</li>
+                        </ul>
+                        <hr/>
+                    </div>
+                    <div class="escalonador-main-cpu__item">
+                        <h3>Pronto 1</h3>
+                        <ul id="ready1">
+                            <li>Opa</li>
+                            <li>Opa</li>
+                            <li>Opa</li>
+                        </ul>
+                        <hr/>
+                    </div>
+                    <div class="escalonador-main-cpu__item">
+                        <h3>Pronto 2</h3>
+                        <ul id="ready2">
+                            <li>Opa</li>
+                            <li>Opa</li>
+                        </ul>
+                        <hr/>
+                    </div>
+                    <div class="escalonador-main-cpu__item">
+                        <h3>Pronto 3</h3>
+                        <ul id="ready3">
+                            <li>Opa</li>
+                        </ul>
+                        <hr/>
+                    </div>
+                    <div class="escalonador-main-cpu__item">
+                        <h3>Bloqueados</h3>
+                        <ul id="blocked">
+                        </ul>
+                        <hr/>
+                    </div>
+                    <div class="escalonador-main-cpu__item">
+                        <h3>Suspensos</h3>
+                        <ul id="suspended">
+                            <li>Opa</li>
+                            <li>Opa</li>
+                        </ul>
+                        <hr/>
+                    </div>
+                    <div class="escalonador-main-cpu__item">
+                        <h3>Suspensos(Prioridade)</h3>
+                        <ul id="suspended-priority">
+                            <li>Opa</li>
+                        </ul>
+                        <hr/>
+                    </div>
+                    <div class="escalonador-main-cpu__item">
+                        <h3>Suspensos(Bloqueados)</h3>
+                        <ul id="suspended-blocked">
+                            <li>Opa</li>
+                            <li>Opa</li>
+                            <li>Opa</li>
+                        </ul>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="js/index.js"></script>
 </body>
 
 </html>
+
