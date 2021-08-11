@@ -1,41 +1,81 @@
 body {
     margin-left: 50px;
     margin-right: 50px;
-  }
-.escalonador__container{
+}
+.escalonador__container {
     text-align: center;
 }
 
-  .escalonador-info__content{
+.escalonador-info__content {
     text-align: center;
-} 
-.escalonador-info__inputContainer{
+}
+.escalonador-info__inputContainer {
     margin-bottom: 15px;
 }
 
-.escalonador-info__input{
+.escalonador-info__input {
     margin-left: 10px;
 }
 
-#file{
+#file {
     color: rgb(158, 158, 158);
 }
 
-.escalonador-info__button{
+.escalonador-info__button {
     margin: 25px;
     height: 35px;
     width: 240px;
 }
 
-.escalonador-main__container{
+.escalonador-main__container {
     background-color: #f5f5f5;
     border: 1px solid #ccc;
 }
 
-.escalonador-main__hours{
+.escalonador-main__hours {
     text-align: center;
 }
 
-.escalonador-main-cpu__text{
+.escalonador-main-cpu__text {
     margin-top: 0;
+}
+
+
+
+.escalonador-main-cpu__log {
+    margin-top: 5px;
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem;
+}
+
+.escalonador-main-cpu__logText {
+}
+
+.escalonador-main__memory {
+    height: 200px;
+    text-align: center;
+    margin-top: 5px;
+    
+}
+
+.escalonador-main-memory__container {
+    background-color: #ccc;
+    height: 72px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: flex;
+}
+
+.escalonador-main-memory__item {
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background-color: #bdbdbd;
+    
+    font-size: 2rem;
+    border: 1px solid #000;
 }
