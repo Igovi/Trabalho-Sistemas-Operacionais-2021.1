@@ -49,10 +49,6 @@ body {
     margin-bottom: 10px;
     padding: 5px 10px;
     background-color: rgba(0, 0, 0, 0.1);
-    font-size: 1.4rem;
-}
-
-.escalonador-main-cpu__logText {
 }
 
 .escalonador-main__memory {
@@ -72,10 +68,9 @@ body {
 
 .escalonador-main-memory__item {
     margin-top: 10px;
-    width: 150px;
+    width: 80px;
     height: 50px;
     background-color: #bdbdbd;
-    
     font-size: 2rem;
     border: 1px solid #000;
 }
