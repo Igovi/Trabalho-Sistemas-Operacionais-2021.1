@@ -1,3 +1,4 @@
+const fileInput = document.getElementById('file');
 const timer = document.getElementById('timer');
 
 var CPUs = [
@@ -45,6 +46,15 @@ var ready2 = [];
 var ready3 = [];
 var priorityQueue = [];
 
+fileInput.addEventListener('change', function () {
+    var fr = new FileReader();
+    fr.onload = function () {
+        fillProcesses(fr.result);
+    }
+    //Interface.outputP.classList.remove('hidden');
+
+    fr.readAsText(this.files[0]);
+});
 
 class Process {
     constructor(id, arrivalTime, priority, processorTime, size, disk) {
@@ -583,6 +593,15 @@ var Interface = {
     _createBlock: function (mBlock, type) {
         let box = document.createElement('div');
         box.className = "escalonador-main-memory__item";
+        if (type == 0) {
+            let text = document.createElement('span');
+            text.textContent = `P${mBlock.process}`;
+            box.appendChild(text);
+        }
+        if (type == 1) {
+            box.style.backgroundColor = '#ccc';
+            box.style.border = 'none';
+        }
         Interface.outputM.appendChild(box);
     },
     updateMemory: function () {
